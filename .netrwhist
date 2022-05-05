@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/root/.config/nvim'
+let g:netrw_dirhist_9='/root/.config/configstore'
+let g:netrw_dirhist_8='/root/.config'
+let g:netrw_dirhist_7='/root/.config/nextjs-nodejs'
+let g:netrw_dirhist_6='/root/Projects/px-frontend-app/src/components/Skill'
+let g:netrw_dirhist_5='/root/Projects/px-frontend-app/src/components'
+let g:netrw_dirhist_4='/root/Projects/px-frontend-app/src'
+let g:netrw_dirhist_3='/root/Projects/px-frontend-app'
+let g:netrw_dirhist_2='/root/Projects/px-frontend-app/src/components'
+let g:netrw_dirhist_1='/root/Projects/px-frontend-app/src'
