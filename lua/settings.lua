@@ -74,5 +74,5 @@ vim.cmd([[
 ]])
 
 -- Color scheme, baby!
-vim.o.background = 'dark'
 vim.cmd('colorscheme gruvbox')
+

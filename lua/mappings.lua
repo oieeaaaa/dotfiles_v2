@@ -29,6 +29,9 @@ function tmap(shortcut, command)
   map('t', shortcut, command)
 end
 
+-- general dev
+nmap('<leader>k', '<cmd>lua vim.diagnostic.open_float()<cr>');
+
 -- keep search matches in the middle of the window
 nmap('n', 'nzzzv')
 nmap('N', 'Nzzzv')
@@ -62,3 +65,8 @@ nmap('<leader>rr', '<cmd>Lspsaga rename<cr>')
 -- NVIM TREE
 nmap('<leader>e', '<cmd>NvimTreeFindFile<cr>')
 nmap('<leader>n', '<cmd>NvimTreeToggle<cr>')
+
+-- GIT (VIM FUGITIVE)
+nmap('<leader>gs', '<cmd>G<bar> :only<cr>');
+nmap('<leader>gf', '<cmd>diffget //2<cr>');
+nmap('<leader>gh', '<cmd>diffget //3<cr>');

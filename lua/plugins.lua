@@ -19,7 +19,10 @@ return require('packer').startup(function()
   use 'gruvbox-community/gruvbox'
 
   -- general dev
-  use 'neovim/nvim-lspconfig'
+  use {
+      "williamboman/nvim-lsp-installer",
+      "neovim/nvim-lspconfig",
+  }
   use 'kabouzeid/nvim-lspinstall'
   use 'glepnir/lspsaga.nvim'
   use 'hrsh7th/nvim-compe'
