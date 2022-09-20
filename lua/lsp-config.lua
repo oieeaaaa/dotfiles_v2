@@ -14,13 +14,4 @@ require'lspconfig'.eslint.setup{}
 require'lspconfig'.tailwindcss.setup{}
 require'lspconfig'.stylelint_lsp.setup{}
 
-require'lspsaga'.init_lsp_saga {
-  error_sign = '!',
-  warn_sign = '^',
-  hint_sign = '?',
-  infor_sign = '~',
-  border_style = "round",
-  code_action_prompt = {
-    enable = false
-  }
-}
+require'lspsaga'.init_lsp_saga {}
