@@ -31,6 +31,7 @@ end
 
 -- general dev
 nmap('<leader>k', '<cmd>lua vim.diagnostic.open_float()<cr>');
+nmap('<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<cr>');
 
 -- keep search matches in the middle of the window
 nmap('n', 'nzzzv')
@@ -70,3 +71,7 @@ nmap('<leader>n', '<cmd>NvimTreeToggle<cr>')
 nmap('<leader>gs', '<cmd>G<bar> :only<cr>');
 nmap('<leader>gf', '<cmd>diffget //2<cr>');
 nmap('<leader>gh', '<cmd>diffget //3<cr>');
+
+-- NERD COMMENTER
+nmap('<leader>/ad', '<plug>NERDCommenterAltDelims');
+nmap('<leader>/s', '<plug>NERDCommenterSexy');
