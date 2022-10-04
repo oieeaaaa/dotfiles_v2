@@ -59,6 +59,8 @@ nmap("<leader>fa", "<cmd>Telescope find_files<cr>") -- find all
 nmap("<leader>fb", "<cmd>Telescope buffers<cr>") -- find buffers
 nmap("<leader>fs", "<cmd>Telescope live_grep<cr>") -- find buffers
 nmap("<leader>dd", "<cmd>Telescope lsp_definitions<cr>")
+nmap("<leader>dr", "<cmd>Telescope lsp_references<cr>")
+nmap("<leader>di", "<cmd>Telescope lsp_implementations<cr>")
 
 -- LSP
 nmap('<leader>rr', '<cmd>Lspsaga rename<cr>')
