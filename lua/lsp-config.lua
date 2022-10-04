@@ -1,8 +1,9 @@
 vim.cmd [[set shortmess+=c]]
 vim.o.completeopt = "menuone,noselect"
 
--- TODO: Fix this later when there is no permission issue to install:
--- npm i -g vscode-langservers-extracted
+-- TODO: On Fresh installs
+-- Run :LspInstallInfo
+-- Install the required lsps below - e.g., prettier, eslint, tsserver, etc...
 vim.cmd [[autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll]]
  
 require("nvim-lsp-installer").setup {}

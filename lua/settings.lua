@@ -1,12 +1,31 @@
 HOME = os.getenv("HOME")
 
+-- global settings
 vim.g.mapleader = ' ' -- space
+
+-- having trouble? https://github.com/neovim/neovim/issues/19204
+-- Only enable on windows subsystems
+if vim.fn.has("wsl") then
+  vim.g.clipboard = {
+    name = 'win32yank-wsl',
+    copy = {
+      ["+"] = 'win32yank.exe -i --crlf',
+      ["*"] = 'win32yank.exe -i --crlf',
+    },
+    paste = {
+      ["+"] = 'win32yank.exe -o --lf',
+      ["*"] = 'win32yank.exe -o --lf',
+    },
+    cache_enabled = 0,
+  }
+end
 
 -- basic settings
 vim.o.encoding = "utf-8"
 vim.o.backspace = "indent,eol,start" -- backspace works on every char in insert mode
 vim.o.completeopt = 'menuone,noselect'
 vim.o.history = 1000
+vim.o.clipboard = 'unnamedplus' -- always use clibboard on all operations
 
 -- Mapping waiting time
 vim.o.timeout = false
