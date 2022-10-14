@@ -43,6 +43,12 @@ nmap('<C-j>', '<C-w>j')
 nmap('<C-k>', '<C-w>k')
 nmap('<C-l>', '<C-w>l')
 
+-- Tab navigation
+nmap('<C-]>', '<cmd>tabnext<cr>')
+nmap('<C-[>', '<cmd>tabprevious<cr>')
+nmap('<leader>tt', '<cmd>tabnew<cr>') -- tab create
+nmap('<leader>te', '<cmd>tabc<cr>') -- tab end
+
 -- Reselect visual block after indent/outdent
 vmap('<', '<gv')
 vmap('>', '>gv')
